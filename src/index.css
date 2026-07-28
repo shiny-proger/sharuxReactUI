@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/* :root {
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: text-blue-100 font-bold;
+    --bg: #0F172A;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #84a4fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+} */
+
+:root {
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+  --text: #9ca3af;
+  --bg: #0F172A;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@layer base{
+  body {
+    @apply ml-10 mr-10
+  }
+}
+
+@layer components {
+  .butMen {
+    @apply hidden text-blue-300 hover:text-amber-300 pr-3 sm:inline-block lg:text-2xl lg:pr-8 md:text-xl md:pr-5
+  }
+  .iconMenu {
+    @apply z-10 inline-block text-2xl text-blue-300 hover:text-amber-300 sm:!hidden
+
+  }
+  h1 {
+    @apply text-[clamp(22px,1vw,158px)] text-blue-100 font-bold
+  }
+  h1 span {
+    @apply text-blue-400 font-bold 
+  }
+  h2 span {
+    @apply text-blue-400 font-bold
+  }
+  h3 span {
+    @apply text-blue-400 font-bold
+  }
+  h4 span {
+    @apply text-blue-400 font-bold
+  }
+  p span {
+    @apply text-blue-400 font-bold text-[clamp(16px,2.5vw,28px)]
+  }
+  
+}
+
+
+
+
+

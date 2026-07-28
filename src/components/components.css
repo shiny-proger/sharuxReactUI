@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@layer components {
+  .cardProj{
+    @apply flex flex-col sm:flex-row sm:flex sm:justify-between  w-full rounded-2xl bg-slate-800 p-5 mb-15 mt-15 hover:-translate-y-[5px] duration-300
+  }
+  .head p{
+    @apply text-[clamp(16px,2.5vw,24px)] rounded-2xl p-0.5
+  }
+  .stateCard{
+    @apply flex justify-start flex-col text-center xl:max-w-150 xl:h-120 2xl:max-w-150 2xl:h-140 bg-slate-800 rounded-3xl 
+  }
+
+}
