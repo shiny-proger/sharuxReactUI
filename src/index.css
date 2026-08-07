@@ -1,10 +1,26 @@
 @import "tailwindcss";
 
-/* :root {
+
+
+:root {
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+
+  --text: #2e9dff;
+  --bg: #d9e9ff;
+
+  --but-min-menu: #3c97ff;
+  --bg-menu: #d9e9ff;
+  --bg-card: #f2f8ff;
+  --border: #e5e7eb;
+  --code-bg: #f3f4f6;
+  --accent: #3881ff;
+  --accent-span: #3a5f9e;
+  --accent-bg: rgba(59, 91, 253, 0.1);
+
+  --text-p: #3a5f9e;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -23,12 +39,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
+    --text: #ffffff;
     --text-h: text-blue-100 font-bold;
+    --text-p:#ffffff;
     --bg: #0F172A;
+    --bg-card: #1d293d;
     --border: #2e303a;
+    --bg-menu: #0F172A;
+    --but-min-menu: #ffffff;
+
     --code-bg: #1f2028;
-    --accent: #84a4fc;
+    --accent: #f3f4f6;
+    --accent-span: oklch(70.7% 0.165 254.624);
     --accent-bg: rgba(192, 132, 252, 0.15);
     --accent-border: rgba(192, 132, 252, 0.5);
     --social-bg: rgba(47, 48, 58, 0.5);
@@ -39,30 +61,7 @@
   #social .button-icon {
     filter: invert(1) brightness(2);
   }
-} */
-
-:root {
-
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-  --text: #9ca3af;
-  --bg: #0F172A;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
-}
+} 
 
 @layer base{
   body {
@@ -72,31 +71,30 @@
 
 @layer components {
   .butMen {
-    @apply hidden text-blue-300 hover:text-amber-300 pr-3 sm:inline-block lg:text-2xl lg:pr-8 md:text-xl md:pr-5
+    @apply hidden text-(--accent-span) hover:text-amber-500 pr-3 sm:inline-block lg:text-2xl lg:pr-8 md:text-xl md:pr-5
   }
   .iconMenu {
-    @apply z-10 inline-block text-2xl text-blue-300 hover:text-amber-300 sm:!hidden
+    @apply z-10 inline-block text-2xl text-(--accent-span) hover:text-amber-500 sm:!hidden
 
   }
   h1 {
-    @apply text-[clamp(22px,1vw,158px)] text-blue-100 font-bold
+    @apply text-[clamp(22px,1vw,158px)] text-(--accent) font-bold 
   }
-  h1 span {
-    @apply text-blue-400 font-bold 
-  }
-  h2 span {
-    @apply text-blue-400 font-bold
-  }
-  h3 span {
-    @apply text-blue-400 font-bold
-  }
-  h4 span {
-    @apply text-blue-400 font-bold
+  span{
+    @apply text-(--accent-span)
   }
   p span {
-    @apply text-blue-400 font-bold text-[clamp(16px,2.5vw,28px)]
+    @apply text-(--text) font-bold text-[clamp(16px,2.5vw,28px)]
   }
-  
+  p{
+    @apply text-(--text-p)
+  }
+  td {
+    @apply border-1 border-(--accent-span) py-2 px-1
+  }
+  th {
+    @apply border-1 border-(--accent-span) py-2 px-1
+  }
 }
 
 

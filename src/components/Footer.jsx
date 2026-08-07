@@ -16,12 +16,12 @@ function Footer(){
                 
             </div>
             <div className='flex flex-col items-center'>    
-                <button className="hover:bg-blue-300 hover:text-blue-900 active:bg-amber-300 active:border-b-blue-900 active:text-blue-900 rounded-4xl p-2 mb-3 font-bold border-2 hover:border-b-blue-900 duration-300 border-b-blue-300 bg-blue-900 text-blue-300">Подписаться</button>
+                <button className="hover:bg-blue-300 hover:text-blue-900 active:bg-amber-500 active:border-b-blue-900 active:text-blue-900 rounded-4xl p-2 mb-3 font-bold border-2 hover:border-b-blue-900 duration-300 border-b-blue-300 bg-blue-900 text-blue-300">Подписаться</button>
                 
                 <div className='text-2xl mt-3 mb-5 '>
                         <FontAwesomeIcon className='hover:text-blue-200 mx-1 sm:mx-0 lg:mx-2' icon={faAnglesRight}/>
-                        <FontAwesomeIcon className='hover:-translate-y-[5px] duration-300 hover:text-blue-200 mx-1 sm:mx-0 lg:mx-2' icon={faTelegram}/>
-                        <FontAwesomeIcon className='hover:-translate-y-[5px] duration-300 hover:text-blue-200 mx-1 sm:mx-0 lg:mx-2' icon={faYoutube}/>
+                        <FontAwesomeIcon className='hover:-translate-y-[5px] duration-300 hover:text-amber-500 mx-1 sm:mx-0 lg:mx-2' icon={faTelegram}/>
+                        <FontAwesomeIcon className='hover:-translate-y-[5px] duration-300 hover:text-amber-500 mx-1 sm:mx-0 lg:mx-2' icon={faYoutube}/>
                         <FontAwesomeIcon className='hover:text-blue-200 mx-1 sm:mx-0 lg:mx-2' icon={faAnglesLeft}/>
                 </div>
             </div>
