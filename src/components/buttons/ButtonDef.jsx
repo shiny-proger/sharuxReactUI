@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { propsButtons } from '../../utils/utils';
 
-function ButtonDef({text="Click", ...styleProps}){  
+function ButtonDef({onClick, text="Click", ...styleProps}){  
     let className=propsButtons(styleProps);
     return (
-        <button className={className} >{text}</button>
+        <button onClick={onClick} className={className} >{text}</button>
     )
 }
 

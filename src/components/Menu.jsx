@@ -5,11 +5,12 @@ import { faSquareCaretDown, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 function MainMenu({ but1 = "Дока", but2 = "Компоненты", but3 = "Другое" }) {
     const [isOpen, setIsOpen] = useState(false);
-
+    
     const closeMenu = () => setIsOpen(false);
 
     return (
         <>
+            
             <div className="p-1 pt-5 xl:p-10 md:p-7 flex justify-between relative z-50">
                 <Link to="/" onClick={closeMenu}>
                     <span className="pr-5 lg:text-2xl md:text-xl active:text-amber-500">
@@ -18,7 +19,7 @@ function MainMenu({ but1 = "Дока", but2 = "Компоненты", but3 = "Д
                 </Link>
                 <div>
                     <FontAwesomeIcon
-                        onClick={() => setIsOpen(prev => !prev)}
+                        onClick={() => setIsOpen(open => !open)}
                         className="iconMenu cursor-pointer"
                         icon={isOpen ? faXmark : faSquareCaretDown}
                     />

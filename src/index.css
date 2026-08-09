@@ -21,7 +21,7 @@
   --accent-bg: rgba(59, 91, 253, 0.1);
 
   --text-p: #3a5f9e;
-
+--text: #a9c8ff;
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
@@ -94,6 +94,9 @@
   }
   th {
     @apply border-1 border-(--accent-span) py-2 px-1
+  }
+  .h1But{
+    @apply mt-3 mb-3 cursor-pointer
   }
 }
 

@@ -63,12 +63,28 @@ export function propsButtons(props) {
       className +=
         " border-red-500 hover:border-red-400 active:border-red-300 text-red-600 hover:text-red-500 bg-red-300 hover:bg-red-200 active:bg-red-100";
       break;
+    case "darkBlue":
+      className +=
+        " border-blue-900 hover:border-blue-500 active:border-blue-400 text-blue-100 hover:text-blue-50 bg-blue-500 hover:bg-blue-400 active:bg-blue-300";
+      break;
+    case "darkOrange":
+      className +=
+        " border-orange-800 hover:border-orange-700 active:border-orange-500 text-orange-200 hover:text-orange-100 bg-orange-500 hover:bg-orange-400 active:bg-orange-300";
+      break;
+    case "darkGreen":
+      className +=
+        " border-emerald-700 hover:border-emerald-500 active:border-emerald-300 text-emerald-100 hover:text-emerald-50 bg-emerald-500 hover:bg-emerald-400 active:bg-emerald-300";
+      break;
+    case "darkRed":
+      className +=
+        " border-red-800 hover:border-red-600 active:border-red-500 text-red-200 hover:text-red-100 bg-red-500 hover:bg-red-400 active:bg-red-300";
+      break;
     case undefined:
       className +=
-        " border-gray-900 hover:border-gray-800 active:border-gray-700 text-gray-300 hover:text-gray-200 bg-gray-800 hover:bg-gray-700 active:bg-gray-600";
+        " backdrop-opacity-10 border-gray-900 hover:border-gray-800 active:border-gray-700 text-gray-300 hover:text-gray-200 bg-gray-800 hover:bg-gray-700 active:bg-gray-600";
       break;
   }
-  console.log([] + {});
+
   switch (props.rad) {
     case "full":
       className += " rounded-full";
