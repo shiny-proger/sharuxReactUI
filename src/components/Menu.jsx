@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareCaretDown, faXmark } from '@fortawesome/free-solid-svg-icons';
 
-function MainMenu({ but1 = "Дока", but2 = "Компоненты", but3 = "Другое" }) {
+function MainMenu({ but1 = "Дока", but2 = "Компоненты", but3 = "O shiny" }) {
     const [isOpen, setIsOpen] = useState(false);
     
     const closeMenu = () => setIsOpen(false);
@@ -25,7 +25,7 @@ function MainMenu({ but1 = "Дока", but2 = "Компоненты", but3 = "Д
                     />
                     <Link to="/docs"><button className="butMen">{but1}</button></Link>
                     <Link to="/components" ><button className="butMen">{but2}</button></Link>
-                    <button className="butMen">{but3}</button>
+                    <Link to="/shiny"><button className="butMen">{but3}</button></Link>
                 </div>
             </div>
 
@@ -45,7 +45,10 @@ function MainMenu({ but1 = "Дока", but2 = "Компоненты", but3 = "Д
                 <Link to="/components" onClick={closeMenu}>
                     <button  className="text-(--but-min-menu) text-2xl hover:cursor-pointer active:text-amber-500">{but2}</button>
                 </Link>
-                <button onClick={closeMenu} className="text-(--but-min-menu) text-2xl hover:cursor-pointer active:text-amber-500">{but3}</button>
+                <Link to="/shiny" onClick={closeMenu}>
+                        <button onClick={closeMenu} className="text-(--but-min-menu) text-2xl hover:cursor-pointer active:text-amber-500">{but3}</button>
+                </Link>
+                
             </div>
         </>
     )

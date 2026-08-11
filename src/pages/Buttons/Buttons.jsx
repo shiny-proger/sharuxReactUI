@@ -140,7 +140,12 @@ function Buttons (){
                             <th >Значения</th>
                             <th>Дефолтное значение</th>
                         </tr>
-                        </thead>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th colSpan={3} >Компонент <span><code>{"<ButtonDef/>"}</code></span></th>
+                        </tr>
+                    </thead>
                     <tbody className='text-center border-1 border-(--accent-span)' >
                         <tr className='border-1 border-(--accent-span)'>
                             <td ><b>text=""</b></td>
@@ -166,6 +171,43 @@ function Buttons (){
                             <td ><b>colorVar=""</b> <br></br>(варианты расцветки)</td>
                             <td >withe | black | purple</td>
                             <td>black</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colSpan={3} >Компонент <span><code>{"<IconButton/>"}</code></span></th>
+                        </tr>
+                    </thead>
+                    <tbody className='text-center border-1 border-(--accent-span)' >
+                        <tr className='border-1 border-(--accent-span)'>
+                            <td ><b>text=""</b></td>
+                            <td >принимает любое текстовое значение</td>
+                            <td>Click</td>
+                        </tr>
+                        <tr >
+                            <td><b>size=""</b> <br></br>(размер кнопки)</td>
+                            <td>1 | 2 | 3</td>
+                            <td>1</td>
+                        </tr>
+                        <tr >
+                            <td ><b>rad=""</b> <br></br>(закругление углов)</td>
+                            <td >none | halv | full</td>
+                            <td >halv</td>
+                        </tr>
+                        <tr >
+                            <td ><b>border=""</b> <br></br>(толщина контура)</td>
+                            <td >none | small | big</td>
+                            <td>none</td>
+                        </tr>
+                        <tr >
+                            <td ><b>colorVar=""</b> <br></br>(варианты расцветки)</td>
+                            <td >withe | black | purple</td>
+                            <td>black</td>
+                        </tr>
+                        <tr >
+                            <td ><b>icon=""</b> <br></br>(иконки)</td>
+                            <td >like | save | arrow</td>
+                            <td>arrow</td>
                         </tr>
                     </tbody>
                 </table>
