@@ -28,31 +28,31 @@ function Buttons (){
     const [color, setColor] = useState("black");
     const colorSetter = (e)=>{
         setColor(e.target.value);
-        console.log(e.target.value)
+
     }
 
     const [size, setSize] = useState("1");
     const sizeSetter = (e)=>{
         setSize(e.target.value);
-        console.log(e.target.value)
+
     }
 
     const [border, setBorder] = useState("none");
     const borderSetter = (e)=>{
         setBorder(e.target.value);
-        console.log(e.target.value)
+
     }
 
     const [rad, setRad] = useState("none");
     const radSetter = (e)=>{
         setRad(e.target.value);
-        console.log(e.target.value)
+
     }
 
     const [icon, setIcon] = useState("arrow");
     const iconSetter = (e)=>{
         setIcon(e.target.value);
-        console.log(e.target.value)
+
     }
     
     const butTag = `<ButtonDef text="${butText}" colorVar="${color}" size="${size}" border="${border}" rad="${rad}"/>
@@ -92,7 +92,7 @@ function Buttons (){
                     {/* Шапка блока кода */}
                     <div className="bg-gray-800 px-4 py-2 text-xs text-gray-400 flex justify-between items-center border-b border-gray-700">
                         <span>JSX</span>
-                        <span>main.jsx code</span>
+                        <span>component</span>
                     </div>
         
                     {/* Контейнер с ограничением высоты и вертикальной прокруткой Tailwind */}
