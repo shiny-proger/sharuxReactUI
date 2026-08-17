@@ -20,6 +20,8 @@
   --accent-span: #3a5f9e;
   --accent-bg: rgba(59, 91, 253, 0.1);
 
+  
+  --code: #138185;
   --text-p: #3a5f9e;
 --text: #a9c8ff;
   font: 18px/145% var(--sans);
@@ -48,6 +50,8 @@
     --bg-menu: #0F172A;
     --but-min-menu: #ffffff;
 
+    --code: #4dafff;
+
     --code-bg: #1f2028;
     --accent: #f3f4f6;
     --accent-span: oklch(70.7% 0.165 254.624);
@@ -71,7 +75,7 @@
 
 @layer components {
   .butMen {
-    @apply hidden text-(--accent-span) hover:text-amber-500 pr-3 sm:inline-block lg:text-2xl lg:pr-8 md:text-xl md:pr-5
+    @apply hidden transition-colors duration-300 text-(--accent-span) border-b-2 border-(--bg) hover:border-b-2 hover:border-b-amber-600 hover:text-amber-500 mr-3 sm:inline-block lg:text-2xl lg:mr-8 md:text-xl md:mr-5
   }
   .iconMenu {
     @apply z-10 inline-block text-2xl text-(--accent-span) hover:text-amber-500 sm:!hidden
@@ -79,6 +83,12 @@
   }
   h1 {
     @apply text-[clamp(22px,1vw,158px)] text-(--accent) font-bold 
+  }
+  h2 {
+    @apply text-(--accent) font-bold text-[clamp(20px,1vw,158px)]
+  }
+  h3 {
+    @apply text-(--accent) 
   }
   span{
     @apply text-(--accent-span)
@@ -90,10 +100,10 @@
     @apply text-(--text-p)
   }
   td {
-    @apply border-1 border-(--accent-span) py-2 px-1
+    @apply border-1 border-(--accent-span) py-2 px-1 text-(--text-p)
   }
   th {
-    @apply border-1 border-(--accent-span) py-2 px-1
+    @apply border-1 border-(--accent-span) py-2 px-1 text-(--accent)
   }
   .h1But{
     @apply mt-3 mb-3 cursor-pointer

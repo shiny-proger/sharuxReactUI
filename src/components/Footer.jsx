@@ -9,10 +9,10 @@ function Footer(){
     return(
         <div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
             <div>
-                <h1 className="text-[clamp(16px,1vw,158)]">Подпишись на мой <span>TG канал</span></h1>
-                <p>В телеграм канале рассказываю как создавать полноценные веб-приложения</p>
+                <h1 className="text-[clamp(16px,1vw,158)]">Subscribe to my <span>Telegram</span></h1>
+                <p>On my Telegram channel I share how to build full-fledged web applications</p>
                 <hr className="absolute left-0 right-0 w-screen border-gray-300 mt-3 sm:mt-0 sm:hidden" />
-                <p className="text-[clamp(5px,2.5vw,18px)] mt-3">© Сайт разработан ShInY в 2026 году</p>
+                <p className="text-[clamp(5px,2.5vw,18px)] mt-3">© Website developed by ShInY, 2026</p>
                 
             </div>
             <div className='flex flex-col items-center'>    
@@ -25,10 +25,6 @@ function Footer(){
                         <FontAwesomeIcon className='hover:text-blue-200 mx-1 sm:mx-0 lg:mx-2' icon={faAnglesLeft}/>
                 </div>
             </div>
-            
-          
-            
-
         </div>
     )
 }

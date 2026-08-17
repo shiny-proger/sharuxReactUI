@@ -10,7 +10,7 @@
     @apply text-[clamp(16px,2.5vw,24px)] rounded-2xl p-0.5
   }
   .stateCard{
-    @apply flex justify-start flex-col text-center xl:max-w-150 xl:h-120 2xl:max-w-150 2xl:h-140 bg-(--bg-card) rounded-3xl 
+    @apply flex justify-start flex-col text-center w-full h-full bg-(--bg-card) rounded-3xl 
   }
   .DefBut{
     @apply flex flex-col items-center mb-10 
