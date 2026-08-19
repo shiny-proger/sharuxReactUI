@@ -13,7 +13,7 @@ function Components (){
             <div className='grid place-content-center pt-15 pb-15 mt-20' >
                 <h1 className='text-[clamp(40px,1vw,300px)] leading-12'>Компоненты <span>sharux</span></h1>
             </div>
-            <div className='grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-10 mt-15 mb-15'>
+            <div className='grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 mt-15 mb-15'>
                 <StateCard url="/components/buttons" head="Кнопки" date="27.07.2026" text="Nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim." image={state1}  />
                 <StateCard url="/components/selectors" head="Selectors" date="April 03, 2022" text="Nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim." image={state2}  />
                 <StateCard head="Lorem " date="March 12, 2022" text="Nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim." image={state3}  />

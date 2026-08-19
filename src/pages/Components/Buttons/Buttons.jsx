@@ -4,7 +4,6 @@ import { faCircleRight, faSquareCaretDown, faSquareCaretRight } from '@fortaweso
 import { ButtonDef } from 'sharux-lib';
 import { IconButton } from "sharux-lib";
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-// Выберите любую тему оформления из доступных в библиотеке
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import TestComp from '../../../components/testComp/TestComp';
 

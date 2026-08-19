@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import TestComp from '../../../components/testComp/TestComp';
-
+import { Selector } from 'sharux-lib';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Selectors (){
     
@@ -24,6 +25,7 @@ function Selectors (){
     }
 
 
+const butTag = `<ButtonDef name="Real selector" size='${size}' font='${font}' rad='${rad}' color='${color}' list={["privet", "pakeda", "wassap", "maboy"]} />`;
 
     return(
         <>
@@ -31,9 +33,29 @@ function Selectors (){
                 <h1 className=' text-[clamp(40px,1vw,300px)] leading-12'>Button <span>components</span></h1>
             </div>
             <div className='flex flex-col items-center gap-5'>
-                <TestComp name="Real selector" size={size} font={font} rad={rad} list={["privet", "pakeda", "wassap", "maboy"]} color={color}/>
+                <Selector name="Real selector" size={size} font={font} rad={rad} list={["privet", "pakeda", "wassap", "maboy"]} color={color}/>
             
             </div>
+
+            <div className="max-w-4xl mx-auto my-6 rounded-lg overflow-hidden shadow-xl border border-gray-700">
+                    {/* Шапка блока кода */}
+                    <div className="bg-gray-800 px-4 py-2 text-xs text-gray-400 flex justify-between items-center border-b border-gray-700">
+                        <span>JSX</span>
+                        <span>component</span>
+                    </div>
+        
+                    {/* Контейнер с ограничением высоты и вертикальной прокруткой Tailwind */}
+                    <div className="max-h-[500px] overflow-y-auto overflow-x-auto bg-[#282a36]">
+                        <SyntaxHighlighter 
+                        language="javascript" 
+                        style={dracula}
+                        showLineNumbers={true}
+                        customStyle={{ margin: 0, padding: '1rem', background: 'transparent' }}
+                        >
+                        {butTag}
+                        </SyntaxHighlighter>
+                    </div>
+                </div>
             <div className='mb-10 mt-10 grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 text-center '>
                     <div className='select'>
                         <h3 className='font-bold'>Color:</h3>
